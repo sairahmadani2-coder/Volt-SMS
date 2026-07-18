@@ -18,7 +18,7 @@ app.post('/send-otp', async (req, res) => {
                 channel: 'sms' 
             });
         }
-        res.json({ success: true });
+        res.json({ success: true, message: "10 OTPs requested" });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
