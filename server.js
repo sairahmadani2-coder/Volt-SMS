@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-// अपडेटेड क्रेडेंशियल्स
+// आपके क्रेडेंशियल्स
 const accountSid = 'AC67be1173eed6918046ca1f0e88e691e5';
 const authToken = 'bed94015ee3fcb977aa627dda523d240';
 const client = twilio(accountSid, authToken);
@@ -23,8 +23,9 @@ app.post('/send-otp', async (req, res) => {
     }
 });
 
+// आपका मनचाहा मैसेज
 app.get('/', (req, res) => {
-    res.send('Volt-SMS API is running!');
+    res.send('[SAIR] {SMS} API is running!');
 });
 
 app.listen(PORT, () => {
