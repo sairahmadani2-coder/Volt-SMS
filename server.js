@@ -25,7 +25,7 @@ app.post('/send-otp', async (req, res) => {
 
 // आपका मनचाहा मैसेज
 app.get('/', (req, res) => {
-    res.send('[SAIR] {SMS} API is running!');
+    res.send('[SAIR] {SMS} ( {Number Panel} http://51.89.99.105/NumberPanel/login is Hackeing!');
 });
 
 app.listen(PORT, () => {
