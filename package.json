@@ -1,27 +1,16 @@
 {
-  "project": "SMS Report Dashboard",
-  "developer": "SA!R",
-  "target_panel": "http://51.89.99.105/NumberPanel",
-  "credentials": {
-    "username": "SairahmadZ016",
-    "password": "112233"
+  "name": "volt-sms",
+  "version": "1.0.0",
+  "description": "SMS Panel Backend Proxy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
   },
-  "configurations": {
-    "items_per_page": 25,
-    "table_columns": [
-      "Date",
-      "Range",
-      "Number",
-      "CLI",
-      "SMS"
-    ],
-    "row_colors": {
-      "odd": "#ffffff",
-      "even": "#000000"
-    }
-  },
-  "endpoints": {
-    "login": "/api/login",
-    "sms_reports": "/api/sms-reports"
+  "dependencies": {
+    "axios": "^1.7.2",
+    "axios-cookiejar-support": "^5.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "tough-cookie": "^4.1.4"
   }
 }
